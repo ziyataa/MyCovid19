@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_title"
+        style="@style/TvTitleMain"/>
+
+    <LinearLayout
+        android:id="@+id/lay_search"
+        style="@style/LlSearchMain">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_view"
+            style="@style/SvMain"/>
+
+        <Button
+            android:id="@+id/sequence"
+            style="@style/BtnMain" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_globe"
+        style="@style/LlGlobeMain">
+
+        <LinearLayout
+            style="@style/LlBoxMain">
+
+            <TextView
+                style="@style/TvBoxMain"
+                android:text="Confirmed"/>
+
+            <TextView
+                android:id="@+id/txt_confirmed_globe"
+                style="@style/TvGlobeMain"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LlBoxMain">
+
+            <TextView
+                style="@style/TvBoxMain"
+                android:text="@string/recovered"/>
+
+            <TextView
+                android:id="@+id/txt_recovered_globe"
+                style="@style/TvGlobeMain"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LlBoxMain">
+
+            <TextView
+                style="@style/TvBoxMain"
+                android:text="@string/deaths" />
+
+
+            <TextView
+                android:id="@+id/txt_deaths_globe"
+                style="@style/TvGlobeMain"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_header"
+        style="@style/LlHeaderMain">
+
+        <TextView
+            android:text="Countries"
+            android:layout_weight="4"
+            style="@style/TvListMain" />
+
+        <TextView
+            android:text="Cases"
+            style="@style/TvListMain"/>
+
+        <TextView
+            android:text="Recover"
+            style="@style/TvListMain"/>
+
+        <TextView
+            android:text="@string/deaths"
+            style="@style/TvListMain"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/PbMain"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        style="@style/SrMain">
+
+        <androidx.recyclerview.widget.RecyclerView
+            style="@style/RvMain"
+            android:id="@+id/rv_country"
+            tools:listitem="@layout/list_country"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

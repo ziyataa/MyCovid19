@@ -1,0 +1,179 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChartCountryActivity">
+
+    <!--kumpulan card-->
+    <LinearLayout
+        style="@style/CardViewAll">
+
+        <LinearLayout
+            style="@style/LLHorinzontal"
+            tools:ignore="NestedWeights">
+
+            <ImageView
+                style="@style/ImageCountryFlag"
+                android:id="@+id/img_flag_country"
+                tools:ignore="NestedWeights"/>
+
+            <androidx.cardview.widget.CardView
+              style="@style/CardViewCountry">
+
+                <LinearLayout
+                    style="@style/LinearLayoutBox">
+
+                    <TextView
+                        android:id="@+id/txt_country_chart"
+                        style="@style/TVCountry1"/>
+
+                    <TextView
+                        android:id="@+id/txt_current"
+                        style="@style/TVCountry2" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LLHorinzontal"
+            tools:ignore="NestedWeights">
+
+            <androidx.cardview.widget.CardView
+                style="@style/CardViewTotalConfirmed">
+
+                <LinearLayout
+                    style="@style/LinearLayoutBox">
+
+                    <TextView
+                        style="@style/TVTotalConfirmed1"/>
+
+                    <TextView
+                        android:id="@+id/txt_total_confirmed_current"
+                        style="@style/TVTotalConfirmed2"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/CardViewNewConfirmed">
+
+                <LinearLayout
+                   style="@style/LinearLayoutBox">
+
+                    <TextView
+                       style="@style/TVNewConfirmed1"/>
+
+                    <TextView
+                        android:id="@+id/txt_new_confirmed_current"
+                        style="@style/TVNewConfirmed2" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LLHorinzontal"
+            tools:ignore="NestedWeights">
+
+            <androidx.cardview.widget.CardView
+                style="@style/CardViewTotalDeaths">
+
+                <LinearLayout
+                    style="@style/LinearLayoutBox">
+
+                    <TextView
+                       style="@style/TVTotalDeaths1"/>
+
+                    <TextView
+                        android:id="@+id/txt_total_deaths_current"
+                        style="@style/TVTotalDeaths2"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/CardViewNewDeaths">
+
+                <LinearLayout
+                    style="@style/LinearLayoutBox">
+
+                    <TextView
+                        style="@style/TVnewDeaths1"/>
+
+                    <TextView
+                        android:id="@+id/txt_new_deaths_current"
+                        style="@style/TVNewDeaths2" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LLHorinzontal"
+            tools:ignore="NestedWeights">
+
+            <androidx.cardview.widget.CardView
+                style="@style/CardViewTotalRecovered">
+
+                <LinearLayout
+                    style="@style/LinearLayoutBox">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Total Recovered"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/sp12"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_total_recovered_current"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="CURRENTLY"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sp20"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/CardViewNewRecovered">
+
+                <LinearLayout
+                    style="@style/LinearLayoutBox">
+
+                    <TextView
+                        style="@style/TVNewRecovered1"/>
+
+                    <TextView
+                        android:id="@+id/txt_recovered_current"
+                        style="@style/TVNewRecovered2"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LLBarChart">
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/chart_view"
+            style="@style/BarChart"/>
+
+    </LinearLayout>
+</LinearLayout>

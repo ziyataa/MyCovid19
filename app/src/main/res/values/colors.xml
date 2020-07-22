@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+        <!-- region solid color-->
+        <color name="black">#000000</color>
+        <color name="white">#ffffff</color>
+        <color name="blue">#0000ff</color>
+        <!-- endregion-->
+
+        <!-- region transparent (opacity)-->
+        <color name="transparent_grey">#80000000</color>
+        <color name="transparent">#66000000</color>
+        <color name="transparent_white">#ccffffff</color>
+        <color name="shadow_color">#cadddddd</color>
+        <!-- endregion-->
+
+        <!-- region color support-->
+        <color name="colorPrimaryLight">#00796A</color>
+        <color name="colorAccentLight">#E2FFC7</color>
+        <color name="orange">#FF5722</color>
+        <color name="yellow">#FFC107</color>
+        <color name="red">#F44336</color>
+        <color name="orange_gray">#FF9E80</color>
+        <color name="yellow_gray">#FFFF8D</color>
+        <color name="blue_gray">#84FFFF</color>
+        <!-- endregion-->
+
+        <!-- region standard 2^n-->
+        <dimen name="dp2">2dp</dimen>
+        <dimen name="dp4">4dp</dimen>
+        <dimen name="dp8">8dp</dimen>
+        <dimen name="dp16">16dp</dimen>
+        <dimen name="dp20">20dp</dimen>
+        <dimen name="dp32">32dp</dimen>
+        <dimen name="dp64">64dp</dimen>
+        <!-- endregion-->
+
+        <!-- region standard 2^n + ((2^n)/2)-->
+        <dimen name="dp12">12dp</dimen>
+        <!-- endregion-->
+
+        <!-- region text size-->
+        <dimen name="sp20">20sp</dimen>
+        <dimen name="sp18">18sp</dimen>
+        <dimen name="sp14">14sp</dimen>
+        <dimen name="sp12">12sp</dimen>
+        <dimen name="sp16">16sp</dimen>
+        <!-- endregion-->
+
+        <!-- region additional integers-->
+        <dimen name="dp5">5dp</dimen>
+        <dimen name="dp45">45dp</dimen>
+        <dimen name="dp50">50dp</dimen>
+        <dimen name="dp100">100dp</dimen>
+        <dimen name="dp150">150dp</dimen>
+        <dimen name="dp180">180dp</dimen>
+        <dimen name="dp200">200dp</dimen>
+        <dimen name="dp300">300dp</dimen>
+        <!-- endregion-->
+    </resources>
